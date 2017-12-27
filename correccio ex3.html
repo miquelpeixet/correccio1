@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+body{text-align:center}
+button{position:fixed;top:20px;left:20px}
+img{height:150px;position:relative}
+</style>
+<script>
+var a=0; //variable global
+function sumarPx(){
+a = a + 10;
+return a+"px";
+}
+window.onload = function(){
+//eventos aquí
+document.getElementsByTagName("button")[0].onclick = function(){
+//al hacer click en el botón...
+document.getElementsByTagName("img")[0].style.top = sumarPx();
+}
+}
+</script>
+</head>
+<body>
+
+<img src="https://www.google.es/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+<button>mover gato</button>
+
+</body>
+</html>
